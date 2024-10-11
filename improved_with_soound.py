@@ -69,14 +69,14 @@ def detect_eye_state():
                 # Play the first sound at 1.5 seconds of closed eyes
                 if elapsed_time > 1.5 and not alert_played_1:
                     print("Playing first sound: beep.wav")  # Debug print
-                    pygame.mixer.music.load(r'D:\Projects\DD-Korean tutor from YT\beep.wav')
+                    pygame.mixer.music.load(r'beep.wav')
                     pygame.mixer.music.play()
                     alert_played_1 = True  # Mark first sound as played
 
                 # Play the second sound at 2.5 seconds in an infinite loop
                 if elapsed_time > 2.5 and not alert_played_2:
                     print("Playing second sound: horn.  in loop")  # Debug print
-                    pygame.mixer.music.load(r'D:\Projects\DD-Korean tutor from YT\horn.mp3')
+                    pygame.mixer.music.load(r'horn.mp3')
                     pygame.mixer.music.play(loops=-1)  # Infinite loop
                     alert_played_2 = True  # Mark second sound as played
 
